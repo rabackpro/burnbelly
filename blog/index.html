@@ -1,0 +1,45 @@
+---
+layout: default
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-page">
+  <div class="blog-page-hero">
+    <div class="container">
+      <p class="section-eyebrow">Weekly updates</p>
+      <h1 class="section-title">The BurnBelly blog</h1>
+      <p class="section-sub">Real numbers every week. Weight, waist, workouts done, energy levels, and honest thoughts on what's working and what isn't.</p>
+    </div>
+  </div>
+
+  <div class="container" style="padding:3rem 0 5rem">
+    {% if site.posts.size == 0 %}
+    <div style="text-align:center;padding:4rem 0;color:var(--text-muted)">
+      <div style="font-size:3rem;margin-bottom:1rem">✍️</div>
+      <div style="font-size:1.1rem;font-weight:500;margin-bottom:0.5rem">First post coming soon</div>
+      <div style="font-size:14px">Week 1 update drops after the first week of training.</div>
+    </div>
+    {% else %}
+    <div class="blog-list">
+      {% for post in site.posts %}
+      <a href="{{ post.url }}" class="blog-list-item">
+        <div class="bli-left">
+          <div class="bli-date">{{ post.date | date: "%b %d, %Y" }}</div>
+          {% if post.week %}<div class="bli-week">Week {{ post.week }}</div>{% endif %}
+        </div>
+        <div class="bli-center">
+          <div class="bli-title">{{ post.title }}</div>
+          <div class="bli-excerpt">{{ post.excerpt | strip_html | truncate: 120 }}</div>
+        </div>
+        <div class="bli-right">
+          {% if post.weight %}<div class="bli-stat"><span>⚖️</span> {{ post.weight }} kg</div>{% endif %}
+          {% if post.workouts %}<div class="bli-stat"><span>💪</span> {{ post.workouts }}/5 sessions</div>{% endif %}
+          <span class="bli-arrow">→</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</div>

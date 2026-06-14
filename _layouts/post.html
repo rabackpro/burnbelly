@@ -1,0 +1,53 @@
+---
+layout: default
+---
+
+<article class="post-page">
+  <div class="post-hero">
+    <div class="post-hero-inner">
+      {% if page.week %}
+      <div class="post-eyebrow">Week {{ page.week }} Update</div>
+      {% endif %}
+      <h1 class="post-title">{{ page.title }}</h1>
+      <div class="post-meta">
+        <span>📅 {{ page.date | date: "%B %d, %Y" }}</span>
+        {% if page.week %}<span>· Week {{ page.week }} of 8</span>{% endif %}
+        {% if page.read_time %}<span>· {{ page.read_time }} min read</span>{% endif %}
+      </div>
+      {% if page.summary %}
+      <p class="post-summary">{{ page.summary }}</p>
+      {% endif %}
+      {% if page.week %}
+      <div class="post-stats-row">
+        {% if page.weight %}<div class="ps-stat"><div class="ps-val">{{ page.weight }}</div><div class="ps-lbl">Weight (kg)</div></div>{% endif %}
+        {% if page.waist %}<div class="ps-stat"><div class="ps-val">{{ page.waist }}</div><div class="ps-lbl">Waist (cm)</div></div>{% endif %}
+        {% if page.workouts %}<div class="ps-stat"><div class="ps-val">{{ page.workouts }}/5</div><div class="ps-lbl">Sessions done</div></div>{% endif %}
+        {% if page.energy %}<div class="ps-stat"><div class="ps-val">{{ page.energy }}/10</div><div class="ps-lbl">Energy level</div></div>{% endif %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <div class="post-body">
+    <div class="post-content">
+      {{ content }}
+    </div>
+
+    <div class="post-nav">
+      <div class="post-nav-inner">
+        {% if page.previous.url %}
+        <a href="{{ page.previous.url }}" class="post-nav-link prev">
+          <span class="pnl">← Previous</span>
+          <span class="pnt">{{ page.previous.title }}</span>
+        </a>
+        {% else %}<div></div>{% endif %}
+        {% if page.next.url %}
+        <a href="{{ page.next.url }}" class="post-nav-link next">
+          <span class="pnl">Next →</span>
+          <span class="pnt">{{ page.next.title }}</span>
+        </a>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% if page.title %}{{ page.title }} — BurnBelly{% else %}BurnBelly — My 8-Week Fat Loss Journey{% endif %}</title>
+<meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 150 }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}BurnBelly{% endif %}">
+<meta property="og:description" content="{{ site.description }}">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/main.css">
+{% feed_meta %}
+{% seo %}
+</head>
+<body>
+
+<nav id="navbar">
+  <a href="/" class="nav-logo">Burn<span>Belly</span></a>
+  <ul class="nav-links">
+    <li><a href="/#journey">Journey</a></li>
+    <li><a href="/#workout">Workouts</a></li>
+    <li><a href="/#meals">Meals</a></li>
+    <li><a href="/blog/">Blog</a></li>
+  </ul>
+  <a href="/#cta" class="nav-cta">Get the plan</a>
+  <button class="nav-mobile-btn" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="/#journey">Journey</a>
+    <a href="/#workout">Workouts</a>
+    <a href="/#meals">Meals</a>
+    <a href="/blog/">Blog</a>
+    <a href="/#cta" class="mobile-cta">Get the plan</a>
+  </div>
+</nav>
+
+<main>
+  {{ content }}
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-logo">BurnBelly</div>
+    <p>A real belly fat loss journey. No shortcuts.</p>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/blog/">Blog</a>
+      <a href="/#workout">Workouts</a>
+      <a href="/#meals">Meals</a>
+    </div>
+    <p class="footer-copy">© 2026 BurnBelly · Built with Jekyll · Hosted free on Netlify</p>
+  </div>
+</footer>
+
+<script src="/assets/js/main.js"></script>
+</body>
+</html>
