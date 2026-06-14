@@ -1,0 +1,29 @@
+title: BurnBelly
+description: My real 8-week belly fat loss journey — workouts, Indian meals, and weekly progress updates.
+url: "https://burnbelly.netlify.app"
+baseurl: ""
+author: BurnBelly
+email: your@email.com
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  posts:
+    output: true
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"

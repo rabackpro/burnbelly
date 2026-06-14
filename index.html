@@ -1,0 +1,178 @@
+---
+layout: default
+title: Home
+---
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-inner" id="ticker">
+    <span class="ticker-item">💪 5 gym days per week <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🔥 HIIT + Strength training <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🥗 Indian-friendly meal plan <span class="ticker-dot"></span></span>
+    <span class="ticker-item">😴 7–8 hours sleep protocol <span class="ticker-dot"></span></span>
+    <span class="ticker-item">🚶 Post-meal walks daily <span class="ticker-dot"></span></span>
+    <span class="ticker-item">📉 0.5–1 kg lost per week <span class="ticker-dot"></span></span>
+    <span class="ticker-item">⏱ 8 weeks to visible results <span class="ticker-dot"></span></span>
+    <span class="ticker-item">💧 3 litres water per day <span class="ticker-dot"></span></span>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-orb orb1"></div>
+  <div class="hero-orb orb2"></div>
+  <div class="hero-orb orb3"></div>
+  <div class="hero-inner">
+    <div class="hero-eyebrow">8-week personal journey · Started June 2026</div>
+    <h1>I decided to finally<span class="line2">burn my <span class="blue">belly fat.</span></span></h1>
+    <p class="hero-sub">No shortcuts. No crash diets. Just a real plan — gym workouts, Indian meals, and daily habits — documented week by week for desk workers like me.</p>
+    <div class="hero-btns">
+      <a href="#workout" class="btn-primary">See the workout plan</a>
+      <a href="/blog/" class="btn-secondary">Read the blog →</a>
+    </div>
+    <div class="hero-stats">
+      <div class="h-stat"><div class="h-stat-val">5×</div><div class="h-stat-lbl">Gym sessions/week</div></div>
+      <div class="h-stat"><div class="h-stat-val">~1800</div><div class="h-stat-lbl">Calories/day</div></div>
+      <div class="h-stat"><div class="h-stat-val">8</div><div class="h-stat-lbl">Weeks long</div></div>
+      <div class="h-stat"><div class="h-stat-val">0 ₹</div><div class="h-stat-lbl">Cost to follow</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS BAND -->
+<div class="stats-section">
+  <div class="stats-grid">
+    <div class="stat-item reveal"><div class="stat-num">56</div><div class="stat-desc">Workout sessions total</div></div>
+    <div class="stat-item reveal reveal-delay-1"><div class="stat-num">~450</div><div class="stat-desc">Calories burned per session</div></div>
+    <div class="stat-item reveal reveal-delay-2"><div class="stat-num">4kg</div><div class="stat-desc">Target fat loss by week 8</div></div>
+    <div class="stat-item reveal reveal-delay-3"><div class="stat-num">100%</div><div class="stat-desc">Free to follow along</div></div>
+  </div>
+</div>
+
+<!-- JOURNEY -->
+<section class="journey-bg" id="journey">
+  <div class="container">
+    <p class="section-eyebrow reveal">Why I started</p>
+    <h2 class="section-title reveal">The honest reason<br>behind BurnBelly</h2>
+    <p class="section-sub reveal">I'm a desk worker. I sit 8+ hours a day and my belly kept growing. This blog is my attempt to change that — publicly.</p>
+    <div class="journey-grid">
+      <div class="j-card reveal reveal-delay-1"><div class="j-icon">🪑</div><div class="j-title">The desk worker problem</div><div class="j-desc">Sitting all day kills your metabolism. I was burning almost no calories during work hours and making up for it with bad food.</div></div>
+      <div class="j-card reveal reveal-delay-2"><div class="j-icon">🍛</div><div class="j-title">Indian food that works</div><div class="j-desc">Most plans are designed for Western diets. This one is built around dal, chapati, sabzi — foods you already eat.</div></div>
+      <div class="j-card reveal reveal-delay-3"><div class="j-icon">📊</div><div class="j-title">Real data, week by week</div><div class="j-desc">I'm tracking weight, waist, and energy weekly and sharing honest numbers — good or bad.</div></div>
+      <div class="j-card reveal reveal-delay-4"><div class="j-icon">💡</div><div class="j-title">What actually works</div><div class="j-desc">Spoiler: it's not crunches. It's a calorie deficit, strength training, sleep, and stress management.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO -->
+<section class="video-section" id="video">
+  <div class="container">
+    <p class="section-eyebrow reveal">Watch</p>
+    <h2 class="section-title reveal">The workout style<br>I follow</h2>
+    <p class="section-sub reveal">Full body strength training — the foundation of my gym days.</p>
+    <div class="video-wrap reveal">
+      <iframe src="https://www.youtube.com/embed/UItWltVZZmE" title="Full Body Workout" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- WORKOUT -->
+<section class="workout-section" id="workout">
+  <div class="container">
+    <p class="section-eyebrow reveal">The plan</p>
+    <h2 class="section-title reveal">Full workout breakdown</h2>
+    <p class="section-sub reveal">Every exercise for all 8 weeks. Intensity builds each phase.</p>
+    <div class="week-tabs reveal">
+      <button class="week-tab active" onclick="switchWeek('w1')">Week 1–2</button>
+      <button class="week-tab" onclick="switchWeek('w2')">Week 3–4</button>
+      <button class="week-tab" onclick="switchWeek('w3')">Week 5–6</button>
+      <button class="week-tab" onclick="switchWeek('w4')">Week 7–8</button>
+    </div>
+    <div class="week-panel active" id="w1">
+      <div class="workout-days">
+        <div class="day-card"><div class="day-label">Mon & Thu</div><div class="day-name">Full body strength</div><ul class="day-exercises"><li>Treadmill warm-up — 10 min</li><li>Squats — 3 × 10</li><li>Bench press — 3 × 8</li><li>Lat pulldown — 3 × 10</li><li>Lunges — 2 × 8 each</li><li>Plank — 3 × 30 sec</li></ul></div>
+        <div class="day-card"><div class="day-label">Tue & Fri</div><div class="day-name">HIIT cardio</div><ul class="day-exercises"><li>Warm-up jog — 5 min</li><li>Sprint intervals — 6 rounds</li><li>Burpees — 2 × 10</li><li>Mountain climbers — 2 × 20 sec</li><li>Jump rope — 8 min</li><li>Cool-down walk</li></ul></div>
+        <div class="day-card rest-card"><div class="rest-emoji">😌</div><div class="rest-label">Wed & Sun — Rest</div></div>
+        <div class="day-card rest-card" style="background:#F0FBF6;border-color:rgba(59,168,118,0.2)"><div class="rest-emoji">🚶</div><div class="rest-label" style="color:#1D6E4F">Saturday — Active walk</div></div>
+      </div>
+    </div>
+    <div class="week-panel" id="w2">
+      <div class="workout-days">
+        <div class="day-card"><div class="day-label">Mon & Thu</div><div class="day-name">Strength — intensity up</div><ul class="day-exercises"><li>Treadmill incline 3 — 10 min</li><li>Squats — 4 × 12</li><li>Bench press — 3 × 10</li><li>Lat pulldown — 3 × 12</li><li>Overhead press — 3 × 10</li><li>Lunges — 3 × 10 each</li><li>Plank — 3 × 45 sec</li></ul></div>
+        <div class="day-card"><div class="day-label">Tue & Fri</div><div class="day-name">HIIT — more rounds</div><ul class="day-exercises"><li>Warm-up jog — 5 min</li><li>Sprint intervals — 8 rounds</li><li>Burpees — 3 × 12</li><li>Box jumps — 3 × 8</li><li>Mountain climbers — 3 × 30 sec</li><li>Jump rope — 10 min</li></ul></div>
+        <div class="day-card rest-card"><div class="rest-emoji">😌</div><div class="rest-label">Wed & Sun — Rest</div></div>
+        <div class="day-card rest-card" style="background:#F0FBF6;border-color:rgba(59,168,118,0.2)"><div class="rest-emoji">🧘</div><div class="rest-label" style="color:#1D6E4F">Saturday — Yoga</div></div>
+      </div>
+    </div>
+    <div class="week-panel" id="w3">
+      <div class="workout-days">
+        <div class="day-card"><div class="day-label">Mon & Thu</div><div class="day-name">Progressive strength</div><ul class="day-exercises"><li>Treadmill incline 4 — 10 min</li><li>Barbell squats — 4 × 12 (heavier)</li><li>Incline bench — 3 × 10</li><li>Pull-ups / pulldown — 3 × 10</li><li>Romanian deadlift — 3 × 10</li><li>Cable crunches — 3 × 15</li></ul></div>
+        <div class="day-card"><div class="day-label">Tue & Fri</div><div class="day-name">Advanced HIIT</div><ul class="day-exercises"><li>Warm-up run — 5 min</li><li>Sprint intervals — 10 rounds</li><li>Burpees — 4 × 12</li><li>Kettlebell swings — 3 × 15</li><li>Battle ropes — 3 × 30 sec</li><li>Jump rope — 12 min</li></ul></div>
+        <div class="day-card rest-card"><div class="rest-emoji">😌</div><div class="rest-label">Wed & Sun — Rest</div></div>
+        <div class="day-card rest-card" style="background:#F0FBF6;border-color:rgba(59,168,118,0.2)"><div class="rest-emoji">🚴</div><div class="rest-label" style="color:#1D6E4F">Saturday — Cycling</div></div>
+      </div>
+    </div>
+    <div class="week-panel" id="w4">
+      <div class="workout-days">
+        <div class="day-card"><div class="day-label">Mon & Thu</div><div class="day-name">Peak strength</div><ul class="day-exercises"><li>Treadmill run — 10 min</li><li>Barbell squats — 5 × 10 max weight</li><li>Bench + incline — 4 × 10 each</li><li>Pull-ups — 4 sets max reps</li><li>Deadlift — 4 × 8</li><li>Full core circuit — 3 rounds</li></ul></div>
+        <div class="day-card"><div class="day-label">Tue & Fri</div><div class="day-name">Peak HIIT</div><ul class="day-exercises"><li>Warm-up run — 8 min</li><li>Sprint intervals — 12 rounds</li><li>Burpees — 4 × 15</li><li>Kettlebell circuit — 4 rounds</li><li>Battle ropes — 4 × 45 sec</li><li>Plyometric jumps — 3 × 12</li></ul></div>
+        <div class="day-card rest-card"><div class="rest-emoji">😌</div><div class="rest-label">Wed & Sun — Rest</div></div>
+        <div class="day-card rest-card" style="background:#F0FBF6;border-color:rgba(59,168,118,0.2)"><div class="rest-emoji">🏊</div><div class="rest-label" style="color:#1D6E4F">Saturday — Swim</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MEALS -->
+<section class="meal-section" id="meals">
+  <div class="container">
+    <p class="section-eyebrow reveal">What I eat</p>
+    <h2 class="section-title reveal">The daily meal plan</h2>
+    <p class="section-sub reveal">Indian food, real ingredients, calorie-controlled. ~1800 calories per day.</p>
+    <div class="meal-grid">
+      <div class="meal-card reveal reveal-delay-1"><div class="meal-time-label">7:00 AM</div><div class="meal-title">Breakfast</div><ul class="meal-items"><li>3 boiled or scrambled eggs</li><li>2 multigrain toast</li><li>Green tea (no sugar)</li></ul><div class="meal-cal">~380 calories</div></div>
+      <div class="meal-card reveal reveal-delay-2"><div class="meal-time-label">10:30 AM</div><div class="meal-title">Mid-morning snack</div><ul class="meal-items"><li>1 banana or apple</li><li>10–12 almonds</li></ul><div class="meal-cal">~170 calories</div></div>
+      <div class="meal-card reveal reveal-delay-3"><div class="meal-time-label">1:00 PM</div><div class="meal-title">Lunch</div><ul class="meal-items"><li>Brown rice or 2 chapati</li><li>Dal or chicken curry</li><li>Mixed sabzi + salad</li></ul><div class="meal-cal">~530 calories</div></div>
+      <div class="meal-card reveal reveal-delay-1"><div class="meal-time-label">4:30 PM</div><div class="meal-title">Pre-workout</div><ul class="meal-items"><li>1 banana</li><li>Black coffee (no sugar)</li></ul><div class="meal-cal">~110 calories</div></div>
+      <div class="meal-card reveal reveal-delay-2"><div class="meal-time-label">6:30 PM</div><div class="meal-title">Post-workout</div><ul class="meal-items"><li>Whey protein shake</li><li>Or curd + fruit</li></ul><div class="meal-cal">~200 calories</div></div>
+      <div class="meal-card reveal reveal-delay-3"><div class="meal-time-label">8:00 PM</div><div class="meal-title">Dinner</div><ul class="meal-items"><li>2 chapati (whole wheat)</li><li>Vegetable curry or dal</li><li>100g grilled chicken or paneer</li></ul><div class="meal-cal">~480 calories</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST BLOG POSTS -->
+<section style="padding:5rem 2rem;background:white">
+  <div class="container">
+    <p class="section-eyebrow reveal">Weekly updates</p>
+    <h2 class="section-title reveal">Latest from the blog</h2>
+    <p class="section-sub reveal">Real numbers, real struggles, real progress — posted every week.</p>
+    <div class="blog-grid reveal">
+      {% for post in site.posts limit:3 %}
+      <a href="{{ post.url }}" class="blog-card">
+        <div class="blog-week">{% if post.week %}Week {{ post.week }}{% else %}{{ post.date | date: "%b %d" }}{% endif %}</div>
+        <div class="blog-title">{{ post.title }}</div>
+        <div class="blog-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</div>
+        <div class="blog-read">Read update →</div>
+      </a>
+      {% endfor %}
+    </div>
+    <div style="text-align:center;margin-top:2rem">
+      <a href="/blog/" class="btn-secondary">See all updates →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="cta">
+  <div class="cta-card reveal">
+    <span class="cta-emoji">🔥</span>
+    <div class="cta-title">Follow the journey</div>
+    <div class="cta-sub">Get the full 8-week plan and weekly updates sent to your inbox. Free, forever.</div>
+    <div class="cta-input-row">
+      <input type="email" class="cta-input" placeholder="your@email.com">
+      <button class="btn-primary">Get the plan</button>
+    </div>
+    <p style="margin-top:1rem;font-size:12px;color:var(--text-faint)">No spam. Just the plan. Unsubscribe anytime.</p>
+  </div>
+</section>
